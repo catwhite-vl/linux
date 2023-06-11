@@ -27,7 +27,7 @@ pacman -S grub efibootmgr nano sudo dhcpcd  base-devel  openssh sof-firmware  os
 mkdir /boot/efi
 #mount /dev/sda1/ /boot/efi
 
-grub-install --target=x86_64-efi --efi-directory=/boot/EFI --bootloader-id=GRUB  --removable
+grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB  --removable
 #grub-install --target=x86_64-efi --efi-directory=/boot --bootloader-id=GRUB #change the directory to /boot/efi is you mounted the EFI partition at /boot/efi
 
 grub-mkconfig -o /boot/grub/grub.cfg
