@@ -55,7 +55,7 @@ useradd -m -g users -G wheel -s /bin/bash sergey
 echo "sergey ALL=(ALL) ALL" >> /etc/sudoers.d/00_sergey
 
 
-printf "\e[1;32mDone! Type exit, umount -F /mnt and reboot.\e[0m"
+printf "\e[1;32mDone! Type exit, umount -R /mnt and reboot.\e[0m"
 
 
 
